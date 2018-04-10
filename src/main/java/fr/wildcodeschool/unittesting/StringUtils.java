@@ -1,4 +1,6 @@
 package fr.wildcodeschool.unittesting;
+
+
 import java.lang.*;
 
 public class StringUtils
@@ -11,6 +13,7 @@ public class StringUtils
      */
     public static String vowels(String candidate) {
         String vowels = "";
+        if (candidate!=null){
         // supprime les espaces eventuels
         candidate=candidate.replaceAll(" ","");
         char[] letters = candidate.toCharArray();
@@ -21,6 +24,7 @@ public class StringUtils
                     vowels += letters[i];
                 }
             }
+        }
         }
         return vowels;
     }
