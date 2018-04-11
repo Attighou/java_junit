@@ -13,19 +13,19 @@ public class StringUtils
      */
     public static String vowels(String candidate) {
         String vowels = "";
-        if (candidate!=null){
+        //if (candidate!=null){
         // supprime les espaces eventuels
         candidate=candidate.replaceAll(" ","");
         char[] letters = candidate.toCharArray();
         for (int i = 0; i < candidate.length(); i++) {
             if (ALL_VOWELS.indexOf(letters[i]) >= 0) {
                 // on teste si la lettre n'a pas été deja trouvée
-                if (vowels.indexOf(letters[i]) < 0) {
+                if (vowels.indexOf( (letters[i])) < 0) {
                     vowels += letters[i];
                 }
             }
         }
-        }
+        //}
         return vowels;
     }
 }
